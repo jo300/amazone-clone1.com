@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Amazone</title>
+    <link rel="icon" href="https://www.pngitem.com/pimgs/m/1-12775_amazon-logo-icon-png-icon-amazon-logo-png.png"
+        type="image/gif">
+</head>
+
+<body class="content ">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top  nav-theam">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class=" fa fa-bars"></span>
+        </button>
+
+        <a class="navbar-brand" href="../components/home.html">
+            <img src="../asstes/images/logo.png" alt="navbar-brand" width="120px" height="auto" title="amazone" />
+
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <form class="form-inline mr-auto my-2 my-lg-0 mr-2">
+                <input type="search" class="form-control mr-sm-2" name="searchBar" id="searchBar"
+                    style="width: 28vw;" />
+                <button class="btn btn-outline-light my-2 my-sm-0 search-button-color"><i
+                        class="fa fa-search"></i></button>
+            </form>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <strong>Home</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Service</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Products</strong>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Contact</strong>
+                    </a>
+                </li>
+                <li class=" button-color rm-border">
+                    <a href="../components/login.html" class="nav-link">
+                        <strong>Login</strong>
+                    </a>
+                </li>
+                <li class="button-color rm-border">
+                    <a href="../components/register.html" class="nav-link">
+                        <strong>SignUp</strong>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                        <strong>Account</strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <label class="user-data" for="user"> logged in as Gust</label>
+                        <hr class="solid">
+                        <a href="../components/profile.html" class="dropdown-item"> <strong>Profile</strong> </a><a
+                            href="#" class="dropdown-item"><strong>Support</strong></a>
+                        <a href="../components/login.html" class="dropdown-item">
+                            <div class="dropdown-divider"></div>
+                            <strong>Logout</strong>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--optionable navbar-->
+
+    <!-- <nav class="navbar navbar-expand-md   navbar-expand-lg navbar-fixed-top  nav-theam-bottom">
+
+          <div class="collapse navbar-collapse">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+
+                    </button>
+
+                    <a href="#" class="nav-link active">
+                        <strong>All</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Best Sellers</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Mobiles</strong>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <strong>Today´s Deals</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Fashion</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Electronics</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Prime</strong><img src="asstes/images/60995.png" alt="" width="20px" height="20px"
+                            style="padding: .5px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Home & Kitchen</strong>
+                    </a>
+                </li>
+            </ul>
+
+        <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                        <strong>Account</strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item"> <strong>Profile</strong> </a><a href="#"
+                            class="dropdown-item"><strong>Support</strong></a>
+                        <a href="#" class="dropdown-item">
+                            <div class="dropdown-divider"></div>
+                            <strong>Logout</strong>
+                        </a>
+                    </div>
+                </li>
+            </ul> -->
+    <!-- </div>
+    </nav> -->
+    <main>
+
+        <div class="container-fluid mb-4" height="350px">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Audio/Under-499/Under_499_Tallhero_3000x1200._CB636754718_.jpg"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/April2022GW/New_FDFO_Apay_ICICI/Bags_and_backpacks/PC_backpack_2x_3000x._CB623853705_.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Sports/June/GW/Weights/Homepage_DesktopHeroTemplate_3000x1200._CB635776475_.jpg"
+                            alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src=" https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2021/desktop-2x._CB658860139_.jpg"
+                            alt="Third slide">
+                    </div>
+
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/TV_2x._SY232_CB627276474_.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Smart LED TVs</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to
+                                </p>
+
+                            </div><a href="../components/product.html" class="link-attr">See more</a>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/Furniture_2x._SY232_CB627276484_.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Furniture</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.
+                                </p>
+
+                            </div><a href="../components/product.html" class="link-attr">See more</a>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/Kitchen2x._SY232_CB627276315_.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Kitchen products</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.
+                                </p>
+
+                            </div> <a href="../components/product.html" class="link-attr">See more</a>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-372x232----B08RDL6H79._SY232_CB667322346_.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Smart AC</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+
+                            </div><a href="../components/product.html" class="link-attr">See more</a>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-372-232._SY232_CB636110853_.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Shoes</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.
+                                </p>
+
+                            </div><a href="../components/product.html" class="link-attr">See more</a>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF_4-372-232._SY232_CB636110853_.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    School Products</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.
+                                </p>
+
+                            </div> <a href="../components/product.html" class="link-attr">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--best sellers-->
+            <div class="container-fluid mb-3">
+                <div class="row">
+                    <div class="col">
+                        <h4 align="center">Best Sellers in Books</h4>
+                        <div class="card-group">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/41p94bBZePL._SX322_BO1,204,203,200_.jpg"
+                                    alt="Card image cap">
+
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/I/41AFEXm7o5L._AC_SY580_FMwebp_.jpg"
+                                    alt="Card image cap">
+
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/41B93B0tNuL._SX326_BO1,204,203,200_.jpg"
+                                    alt="Card image cap">
+
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/I/51BtlJLvmbL._AC_SY580_FMwebp_.jpg"
+                                    alt="Card image cap">
+
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/I/51a4mCdMVNS._AC_SY580_FMwebp_.jpg"
+                                    alt="Card image cap">
+
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/I/41AFEXm7o5L._AC_SY580_FMwebp_.jpg"
+                                    alt="Card image cap">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div> -->
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <a href="../components/home.html" class="btn btn-secondary btn-lg btn-block rounded-0"> Back to top</a>
+
+            <footer class="page-footer font-small blue pt-4 pb-3 footer-content">
+
+
+                <div class="container-fluid text-center text-md-left mb-4">
+
+
+                    <div class="row ">
+
+
+                        <div class="col-md-3 mt-md-0 mt-3">
+
+                            <!-- Content -->
+                            <h5 class="text-uppercase foota">Get to Know Us</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Press Releases</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Amazon Cares</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Gift a Smile</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <hr class="clearfix w-100 d-md-none pb-3">
+
+
+                        <div class="col-md-3 mb-md-0 mb-3">
+
+
+                            <h5 class="text-uppercase foota">Connect with Us</h5>
+                            <ul class="cc-content-footer-social-list " align-item="center" style="list-style: none;">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-google"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+
+                            </ul>
+
+                            <!-- <h5 class="text-uppercase">USEFUL LINKS</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#!">Connect with us on WhatsApp</a>
+                            </li>
+                            <li>
+                                <a href="#!">Invite Bata Store On Wheels</a>
+                            </li>
+                            <li>
+                                <a href="#!">Become Our Partner</a>
+                            </li>
+                        </ul> -->
+
+                        </div>
+                        <div class="col-md-3 mb-md-0 mb-3">
+
+                            <h5 class="text-uppercase foota">Make Money with Us</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Sell on Amazon</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sell under Amazon Accelerator</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Amazon Global Selling</a>
+                                </li>
+                                <li>
+                                    <a href="#!"> Become an Affiliate</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-3 mb-md-0 ">
+
+                            <h5 class="text-uppercase foota">Let Us Help You </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">COVID-19 and Amazon</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Your Account</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Returns Centre
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">100% Purchase Protection</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </footer>
+
+            <div class="footer-copyright text-center py-3 footer">
+                <a class="navbar-brand" href="../components/home.html">
+                    <img src="../asstes/images/logo.png" alt="navbar-brand" width="120px" height="auto"
+                        title="amazone" />
+
+                </a>
+                <ul class="list-item">
+                    <li> <a href="/"> Conditions of Use & Sale</a> <a href="/"> Privacy Notice</a> <a href="/"> ©
+                            1996-2022,
+                            Amazon.com, Inc. or its affiliates</a></li>
+                </ul>
+            </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

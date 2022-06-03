@@ -1,0 +1,21 @@
+.card {
+  align-items: center;
+  margin-top: 10vh;
+  border: solid 1px rgb(53, 124, 225);
+  .card-img-top {
+    width: 200px;
+    height: auto;
+    align-items: center;
+  }
+}
+.card-header-set {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.underline {
+  width: 50%;
+  text-align: left;
+  margin-left: 0;
+  background: rgb(24, 104, 79);
+}
